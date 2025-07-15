@@ -7,9 +7,9 @@
     "dev": "nodemon ./app.ts",
     "start": "node ./dist/index.js",
     "build": "tsc",
-    "migration:generate": "drizzle-kit generate:sqlite",
-    "migration:run": "ts-node ./db/migrate.ts",
-    "drizzle:studio": "drizzle-kit studio"
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "push": "drizzle-kit push"
   },
   "author": "Koks",
   "license": "ISC",
