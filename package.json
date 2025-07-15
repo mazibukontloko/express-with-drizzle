@@ -1,0 +1,34 @@
+{
+  "name": "git-prac-project-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./app.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "migration:generate": "drizzle-kit generate:sqlite",
+    "migration:run": "ts-node ./db/migrate.ts",
+    "drizzle:studio": "drizzle-kit studio"
+  },
+  "author": "Koks",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "drizzle-kit": "^0.31.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "express": "^5.1.0",
+    "zod": "^3.25.61"
+  }
+}
